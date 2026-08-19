@@ -1,0 +1,52 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files — NEVER commit state (contains sensitive data)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files, as they are likely to contain sensitive data
+# Agar aap public/sample values commit karna chahte ho, unhe example.tfvars naam do
+*.tfvars
+*.tfvars.json
+
+# Ignore override files (local dev overrides)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore lock file (optional — team decide karti hai commit karna hai ya nahi)
+# .terraform.lock.hcl
+
+# Azure specific
+*.azurePubxml
+*.publishsettings
+
+# Environment / secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
